@@ -17,10 +17,10 @@ test.beforeAll(async () => {
     // Login API
 	const apiContext = await request.newContext();
     const apiUtils = new APIUtils(apiContext, loginPayLoad);
-    apiUtils.createOrder(orderPayLoad);
+    apiUtils.createOrder(orderPayLoad)
 	
 
-    
+})
 
 test.beforeEach(() => {
 
@@ -57,4 +57,5 @@ test('Place the order', async ({ page }) =>
 	expect(orderId.includes(orderIdDetails)).toBeTruthy();
 
 	await page.pause();
-});
+    
+})   
