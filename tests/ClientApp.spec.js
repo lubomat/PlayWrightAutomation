@@ -1,6 +1,6 @@
 const {test, expect} = require('@playwright/test')
 
-test('Browser Contex Playwright test', async ({page})=>
+test('Client App login', async ({page})=>
 {     
 
       const productName = 'ZARA COAT 3'
